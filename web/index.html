@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Corinthians - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://logodownload.org/wp-content/uploads/2016/11/Corinthians-logo-escudo-1.png" alt="Corinthians" height="40">
+                <span class="ms-2">Loja do Corinthians</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">Carrinho</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="carrinho.html" class="btn btn-outline-light position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner-corinthians py-5 mb-4">
+        <div class="container text-center text-white">
+            <h1 class="display-4 fw-bold">Loja do Corinthians</h1>
+            <p class="lead">Os melhores produtos do Timão para você!</p>
+        </div>
+    </div>
+
+    <!-- Produtos -->
+    <div class="container mb-5">
+        <h2 class="text-center mb-4">Nossos Produtos</h2>
+        <div class="row" id="produtos-container">
+            <!-- Produtos serão carregados via JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal de Produto -->
+    <div class="modal fade" id="produtoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-black text-white">
+                    <h5 class="modal-title" id="modalProdutoTitulo">Detalhes do Produto</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="modalProdutoImagem" src="" class="img-fluid rounded" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="modalProdutoNome"></h3>
+                            <p id="modalProdutoDescricao" class="text-muted"></p>
+                            <h4 class="my-3" id="modalProdutoPreco"></h4>
+                            <div class="d-flex align-items-center mb-3">
+                                <button class="btn btn-outline-secondary" id="decrementar">-</button>
+                                <input type="number" id="quantidade" class="form-control text-center mx-2" value="1" min="1" style="width: 60px;">
+                                <button class="btn btn-outline-secondary" id="incrementar">+</button>
+                            </div>
+                            <button class="btn btn-danger w-100" id="adicionarAoCarrinho">Adicionar ao Carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-black text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Loja do Corinthians. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

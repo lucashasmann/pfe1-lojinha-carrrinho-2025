@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nome": "Camisa do Corinthians I 2025",
+    "descricao": "Camisa oficial do Corinthians temporada 2023, modelo jogador.",
+    "preco": 299.90,
+    "imagem": "assets/images/imagem1.png"
+  },
+  {
+    "id": 2,
+    "nome": "Camisa do Corinthians II 2025",
+    "descricao": "Camisa alternativa do Corinthians temporada 2023, modelo torcedor.",
+    "preco": 249.90,
+    "imagem": "assets/images/imagem2.png"
+  },
+  {
+    "id": 3,
+    "nome": "Short do Corinthians I 2025",
+    "descricao": "Short oficial do Corinthians temporada 2023, modelo jogador.",
+    "preco": 149.90,
+    "imagem": "assets/images/imagem3.png"
+  },
+  {
+    "id": 4,
+    "nome": "Meião do Corinthians 2025",
+    "descricao": "Meião oficial do Corinthians temporada 2023.",
+    "preco": 79.90,
+    "imagem": "assets/images/imagem4.png"
+  },
+  {
+    "id": 5,
+    "nome": "Jaqueta do Corinthians",
+    "descricao": "Jaqueta corta-vento oficial do Corinthians.",
+    "preco": 349.90,
+    "imagem": "assets/images/imagem5.png"
+  },
+  {
+    "id": 6,
+    "nome": "Boné do Corinthians",
+    "descricao": "Boné oficial do Corinthians, ajustável.",
+    "preco": 99.90,
+    "imagem": "assets/images/imagem6.png"
+  },
+  {
+    "id": 7,
+    "nome": "Mochila do Corinthians",
+    "descricao": "Mochila oficial do Corinthians, com vários compartimentos.",
+    "preco": 199.90,
+    "imagem": "assets/images/imagem7.png"
+  }
+]
